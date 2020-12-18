@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color:#FBFCFC;
+}
+/* Navbar css*/
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color:#F4F6F7;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.navbar-components{
+    display: flex;
+    margin: 0 2rem;
+    padding: 0.8rem 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar-brand{
+    height: 2rem;
+    width: auto;
+    position: absolute;
+    left: 3rem;
+}
+
+.fa-arrow-left, .fa-times{
+    color: #6F6D6C;
+    font-size: 1.5rem;
+}
+
+/* Main content css */
+
+.main-container{
+    /* border: 1px solid #000000; */
+    margin: 3rem auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    margin: 1rem auto;
+}
+
+.header-title{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #515A5A;
+}
+
+.header-subtitle{
+    font-size: 10px;
+    text-align: center;
+}
+
+.detail-amount{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.detail-title{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #515A5A;
+    margin-bottom: 0px;
+}
+
+#inr-rps{
+    position: absolute;
+    top:0.8rem;
+    left:14rem;
+}
+
+#cal
+{
+    position: absolute;
+    top: 0.8rem;
+    left: 30rem;
+}
+
+#inr-rgt
+{
+    position: absolute;
+    top: 0.8rem;
+    right: 8.8rem;
+}
+
+.fa-rupee-sign, .fa-calendar-alt{
+    font-size: 2.5rem;
+    color: #D7DBDD;
+}
+
+.insurance-details{
+    display: flex;
+}
+
+.pie-chart{
+    width: 34%;
+    margin: 1rem 0;
+}
+
+.pie-diagram{
+    width: 80%;
+}
+
+.pie-details{
+    font-size: 8px;
+    text-align: center;
+}
+
+.insurance-companies{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+}
+
+.company-info{
+    border-radius: 3px;
+    border: 1px solid #D7DBDD;
+    margin-bottom: 0.5rem;
+    padding: 15px;
+    position: relative;
+}
+
+.company-title{
+    color: #515A5A;
+    margin-bottom: 0.3rem;
+}
+
+.period-cap, .investment-amnt{
+    font-size: 0.8rem;
+    color: #515A5A;
+    display: inline-block;
+    width: 16rem;
+}
+
+.total-amount{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 6rem;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ABC9C;
+    font-size: 1.9rem;
+    border-radius: 1px;
+}
+
+.inr-details{
+    font-size: 8px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.start-process{
+    width: 14rem;
+    color: #F4F6F7;
+    background: #1ABC9C;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    margin: 1rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Responsive Media */
+
+@media only screen and (max-device-width: 768px) {
+  
+    .detail-title{
+        font-size: 1.2rem;
+    }
+
+    .detail-subtitle{
+        font-size: 0.6rem;
+    }
+
+    .fa-rupee-sign, .fa-calendar-alt{
+        font-size: 2rem;
+    }
+
+    #inr-rps{
+        position: absolute;
+        top: 0.3rem;
+    left: 6.3rem;
+    }
+    
+    #cal
+    {
+        position: absolute;
+        top: 0.3rem;
+        left: 13.9rem;
+    }
+    
+    #inr-rgt
+    {
+        position: absolute;
+        top: 0.3rem;
+        right: 5.2rem;
+    }
+    .company-info{
+        padding: 9px;
+    }
+    /* .company-title{
+        font-size: 0.7rem;
+    } */
+    .period-cap, .investment-amnt {
+        font-size: 0.6rem;
+        width: 7rem;
+    }
+    .total-amount{
+        width: 5rem;
+    height: 3.6rem;
+    font-size: 1.4rem;
+    }
+    .start-process{
+        width: 11rem;
+        font-size: 1rem;
+    }
+    
+  }
+  
+
+@media (max-device-width: 425px) and (min-device-width: 320px){
+    .navbar-brand{
+        height: 1.5rem;
+        left: 2rem;   
+    }
+
+    .navbar-components{
+        margin: 0 1rem;
+        padding: 0.7rem 0;
+    }
+   
+    .fa-arrow-left, .fa-times{
+        font-size: 1rem;
+    }
+
+    .main-container{
+        margin: 2rem auto;
+        width: 90%;
+    }
+
+    .header-title{
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+    
+    .header-subtitle{
+        font-size: 8px;
+    }
+
+    .detail-title{
+        font-size: 0.8rem;
+    }
+
+    .detail-subtitle{
+        font-size: 7px;
+    }
+
+    .fa-rupee-sign, .fa-calendar-alt{
+        display: none;
+    }
+
+    .insurance-details{
+        display: block;
+    }
+
+    .pie-chart{
+        width: 34%;
+        margin: 1rem auto;
+    }
+
+    .pie-diagram{
+        width: 100%;
+    }
+
+    .pie-details{
+        font-size: 5px;
+        text-align: center;
+    }
+
+    .insurance-companies{
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .company-info{
+        padding: 3px;
+    }
+
+    .company-title{
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .period-cap, .investment-amnt{
+        font-size: 0.5rem;
+        width: 6rem;
+    }
+
+    .total-amount{
+        width: 3rem;
+        height: 2.2rem;
+        font-size: 0.9rem;
+        color: #ffffff;
+    }
+
+    .inr-details{
+        font-size: 7px;
+    }
+
+    .start-process {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+}
