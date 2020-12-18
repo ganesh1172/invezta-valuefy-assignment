@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./Images/Invezta-Logo.png" alt="Invezta" width="280px">
+    <img src="./Images/preview-logo.png" alt="Invezta" width="280px">
 </p>
 
 A sample template 

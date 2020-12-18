@@ -228,18 +228,18 @@ body{
         right: 5.2rem;
     }
     .company-info{
-        padding: 9px;
+        padding: 6px;
     }
-    /* .company-title{
+    .company-title{
         font-size: 0.7rem;
-    } */
+    } 
     .period-cap, .investment-amnt {
         font-size: 0.6rem;
         width: 7rem;
     }
     .total-amount{
         width: 5rem;
-    height: 3.6rem;
+    height: 3.3rem;
     font-size: 1.4rem;
     }
     .start-process{
